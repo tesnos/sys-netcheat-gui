@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>698</width>
+    <height>471</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Sys-NetCheat GUI</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLineEdit" name="search">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>100</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="search_label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>80</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search for value</string>
+    </property>
+    <property name="buddy">
+     <cstring>search</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="size_label">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>80</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search Value Size</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="results_label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>120</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search Results</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="newsearch">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>200</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>New Search</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="unfreeze_selector">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>300</y>
+      <width>41</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="unfreezebutton">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>300</y>
+      <width>71</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Unfreeze</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="ip_box">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>30</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="frozenlist_label">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>80</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Frozen Locations:</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="ip_label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>10</y>
+      <width>61</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Switch's IP:</string>
+    </property>
+    <property name="buddy">
+     <cstring>ip_box</cstring>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="connect">
+    <property name="geometry">
+     <rect>
+      <x>140</x>
+      <y>30</y>
+      <width>101</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Test Connection</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>220</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Freeze Value</string>
+    </property>
+    <property name="buddy">
+     <cstring>freezeval</cstring>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>110</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Freeze Value Size</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>260</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Freeze Location</string>
+    </property>
+    <property name="buddy">
+     <cstring>freezeloc</cstring>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="freeze_button">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>310</y>
+      <width>75</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Freeze</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="freezeval">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>240</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="freezeloc">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>280</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>100</y>
+      <width>160</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="search_radio">
+     <item>
+      <widget class="QRadioButton" name="u8_search">
+       <property name="text">
+        <string>u8</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="u16_search">
+       <property name="text">
+        <string>u16</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="u32_search">
+       <property name="text">
+        <string>u32</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="u64_search">
+       <property name="text">
+        <string>u64</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>130</y>
+      <width>160</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="freeze_radio">
+     <item>
+      <widget class="QRadioButton" name="u8_freeze">
+       <property name="text">
+        <string>u8</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="u16_freeze">
+       <property name="text">
+        <string>u16</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="u32_freeze">
+       <property name="text">
+        <string>u32</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="u64_freeze">
+       <property name="text">
+        <string>u64</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="searchbutton">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>100</y>
+      <width>61</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Search</string>
+    </property>
+   </widget>
+   <widget class="QTreeWidget" name="freezetree">
+    <property name="geometry">
+     <rect>
+      <x>295</x>
+      <y>101</y>
+      <width>281</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string notr="true">1</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTreeWidget" name="searchtree">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>140</y>
+      <width>161</width>
+      <height>192</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string notr="true">1</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>340</y>
+      <width>441</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Note: Attempts to search for very common values (mainly 0x0-0x10) will usually crash this</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pokebutton">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>30</y>
+      <width>41</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Poke</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pokeaddr_label">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>10</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Poke Address</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pokeval_label">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>10</y>
+      <width>51</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Poke Value</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pokevalsize_label">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>0</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Poke Value Size</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>20</y>
+      <width>160</width>
+      <height>88</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="poke_radio">
+     <item>
+      <widget class="QRadioButton" name="u8_poke">
+       <property name="text">
+        <string>u8</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="u16_poke">
+       <property name="text">
+        <string>u16</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="u32_poke">
+       <property name="text">
+        <string>u32</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QRadioButton" name="u64_poke">
+       <property name="text">
+        <string>u64</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLineEdit" name="pokeaddr_box">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>30</y>
+      <width>101</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="pokeval_box">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>30</y>
+      <width>113</width>
+      <height>20</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>360</y>
+      <width>611</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Note: Searching may take a while, especially with bigger games. Be patient and don't hit x as soon as it stops responding</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>380</y>
+      <width>351</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Note: Freezing many values at once can get a bit buggy, so watch out</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>400</y>
+      <width>621</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Note: Do not be deterred if the switch is not found when it just worked a second ago, as it is very inconsistent. Just keep trying</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>698</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <tabstops>
+  <tabstop>ip_box</tabstop>
+  <tabstop>connect</tabstop>
+  <tabstop>search</tabstop>
+  <tabstop>newsearch</tabstop>
+  <tabstop>u8_search</tabstop>
+  <tabstop>u16_search</tabstop>
+  <tabstop>u32_search</tabstop>
+  <tabstop>u64_search</tabstop>
+  <tabstop>searchbutton</tabstop>
+  <tabstop>u8_freeze</tabstop>
+  <tabstop>u16_freeze</tabstop>
+  <tabstop>u32_freeze</tabstop>
+  <tabstop>u64_freeze</tabstop>
+  <tabstop>freezeval</tabstop>
+  <tabstop>freezeloc</tabstop>
+  <tabstop>freeze_button</tabstop>
+  <tabstop>unfreeze_selector</tabstop>
+  <tabstop>unfreezebutton</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>
