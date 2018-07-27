@@ -144,29 +144,29 @@ void MainWindow::on_searchbutton_released()
 
         //socket.write("hey hey hey");
         QByteArray ba = searchreq.toLatin1();
-        //qDebug() << ba.data();
+        qDebug() << ba.data();
         char introbuf[256];
         socket.waitForReadyRead();
         socket.read(introbuf, 256);
-        //qDebug() << introbuf;
+        qDebug() << introbuf;
         socket.waitForReadyRead(500);
         socket.read(introbuf, 256);
-        //qDebug() << introbuf;
+        qDebug() << introbuf;
         socket.write(ba.data());
         socket.waitForBytesWritten();
 
         ui->searchtree->clear();
 
         //char linebuf[50];
-        socket.waitForReadyRead(250);
+        socket.waitForReadyRead(5000);
         long long int bytesread = 0;
         QList<QTreeWidgetItem *> treeitems = QList<QTreeWidgetItem*>();
         while(true)
         {
             //memset(linebuf, 0, 50);
             QByteArray bytes = socket.readAll();
-            if (bytesread == 0) { break; }
-            //qDebug() << bytes.data();
+            //if (bytesread == 0) { break; }
+            qDebug() << bytes.data();
             bool last = false;
             if (bytes.data()[bytes.size() - 2] == 0x3e) { last = true; }
             if (bytes.contains(0x21))
